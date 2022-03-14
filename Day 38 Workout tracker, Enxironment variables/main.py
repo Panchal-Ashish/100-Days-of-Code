@@ -13,8 +13,8 @@ TIME = TODAY.strftime("%X")
 print(DATE)
 print(TIME)
 
-APP_ID = os.environ["ENV_APP_ID"]     # nutritionix   # #"57201ce9"
-APP_KEY = os.environ["ENV_APP_KEY"]        # nutritionionix  #"348c17c3fd7488d4eaf6c4c8f89dbb3a"
+APP_ID = os.environ["ENV_APP_ID"]     # nutritionix   
+APP_KEY = os.environ["ENV_APP_KEY"]        # nutritionionix  
 
 exercise_endpoint =  "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/45b16c9a9784d95e5305b68f0f4e7ec5/day38WorkoutTracker/workouts"
@@ -52,7 +52,7 @@ for exercise in data['exercises']:
         }
     }
     ## BASIC AUTHENTICATIONS-------------------------
-    sheety_response = requests.post(url=sheety_endpoint, json=sheety_parameters, auth= ("Ashish","Ashish"))
+    sheety_response = requests.post(url=sheety_endpoint, json=sheety_parameters, auth= ("xxyz","xxyz"))
     print(sheety_response.text)
 
     ## BEARER AUTHENTICATIONS------------------------------------------- first change auth settings in site
