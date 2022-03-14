@@ -5,9 +5,9 @@ import pandas
 BACKGROUND_COLOR = "#B1DDC6"
 
 try:
-    data = pandas.read_csv("data/words_to_learn.csv")
+    data = pandas.read_csv("words_to_learn.csv")
 except FileNotFoundError:
-    data = pandas.read_csv("data/french_words.csv")
+    data = pandas.read_csv("french_words.csv")
     to_learn = data.to_dict(orient="records")
 else:
     # to_learn = data.to_dict(orient= "index")    ## please go through pandas orient documentation, important
@@ -68,11 +68,11 @@ canvas.grid(row= 0,column= 0, columnspan= 2)
 
 
 ## BUTTONS
-tick_image = PhotoImage(file= "./images/right.png")
+tick_image = PhotoImage(file= "right.png")
 right_button = Button(image= tick_image, highlightthickness= 0, command= is_known)
 right_button.grid(row= 1, column= 0)
 
-cross_image = PhotoImage(file= "C:/Users/Manoj/PycharmProjects/Udemy 100 days of code/Day 31 Flash card project/images/wrong.png")
+cross_image = PhotoImage(file= "wrong.png")
 wrong_button = Button(image= cross_image, highlightthickness= 0, command= new_word)
 wrong_button.grid(row= 1, column= 1)
 
