@@ -1,6 +1,6 @@
 # import requests
 #
-# SHEETY_ENDPOINT = "Your sheety endpoint"
+# SHEETY_ENDPOINT = "your sheety endpoint to the sheet with flight price details"
 #
 # class DataManager():
 #
@@ -29,7 +29,7 @@
 import requests
 from pprint import pprint
 
-SHEETY_PRICES_ENDPOINT = "Your sheety endpoint"
+SHEETY_PRICES_ENDPOINT = "your sheety endpoint to the sheet with flight price details"
 
 
 class DataManager():
