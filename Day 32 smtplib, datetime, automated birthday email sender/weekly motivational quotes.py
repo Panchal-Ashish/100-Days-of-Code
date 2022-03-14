@@ -10,10 +10,10 @@ if weekday == 3:    # mon = 0, tues = 1, wed =2, .....
         data = quotes.readlines()
         quote = random.choice(data)
 
-    my_email = "job.ashish28@gmail.com"
-    password = "Ashish_28"
+    my_email = "your mail id"
+    password = "your pswd"
 
-    with smtplib.SMTP("smtp.gmail.com", port= 587) as connection:
+    with smtplib.SMTP("smtp.gmail.com", port= 587) as connection:   ## for gmail
         connection.starttls()
         connection.login(user= my_email,password= password)
         connection.sendmail(from_addr=my_email,
