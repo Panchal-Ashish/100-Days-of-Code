@@ -23,12 +23,12 @@ class QuizInterface():
         self.canvas.grid(row= 1, column= 0, columnspan= 2,pady= 50)
 
 
-        tick_img = PhotoImage(file= "./images/true.png")
+        tick_img = PhotoImage(file= "true.png")
         self.tick_button = Button(width= 80, height= 80,image= tick_img, highlightthickness= 0,command= self.true_pressed)
         self.tick_button.grid(row= 2, column= 0)
 
 
-        cross_img = PhotoImage(file= "./images/false.png")
+        cross_img = PhotoImage(file= "false.png")
         self.cross_button = Button(width= 80, height= 80,image= cross_img, highlightthickness= 0,command = self.false_pressed)
         self.cross_button.grid(row=2, column= 1)
 
