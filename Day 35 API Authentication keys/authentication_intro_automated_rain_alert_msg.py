@@ -2,10 +2,10 @@ import requests
 from twilio.rest import Client
 import os
 
-account_sid = 'AC2859004428bce7afcad28175bb8e4d98'
-auth_token = 'cbcb1221265a2c170eec585158537556'
+account_sid = 'Your Acc SID'
+auth_token = 'Your Auth token'
 
-api_key = "8277def61f0af14dec7054ddb3de60d4"    # from weather map
+api_key = "Your API Key"    # from weather map
 endpoint = "https://api.openweathermap.org/data/2.5/onecall"
 
 parameters = {
@@ -29,8 +29,8 @@ for x in range(0,12):
         # message = client.messages.create \
         #         (
         #         body="It will rain today. take an umbrella along",
-        #         from_='+17082942621',
-        #         to='+917506058102'
+        #         from_='your from no.',
+        #         to='your to no.'
         #     )
         # print(message.status)
         # print(f"{a}: bring an umbrella")
@@ -45,8 +45,8 @@ for x in range(0,12):
 #         message = client.messages.create \
 #                 (
 #                 body="It will rain today. take an umbrella along",
-#                 from_='+17082942621',
-#                 to='+917506058102'
+#                 from_='your from no.',
+#                 to='your to no.'
 #             )
 #         print(message.status)
 ##         will_rain = True
@@ -58,8 +58,8 @@ if will_rain:
     message = client.messages.create \
         (
         body="It will rain today. take an umbrella along",
-        from_='+17082942621',
-        to='+917506058102'
+        from_='your from no.',
+        to='your to no.'
     )
     print(message.status)
     # print(message.sid)
