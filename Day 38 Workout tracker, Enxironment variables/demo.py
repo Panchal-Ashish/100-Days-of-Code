@@ -1,6 +1,7 @@
 import os
 
 ## To set an environment variable... Method 1
+## Examples
 # os.environ["API_KEY"] = '0456'
 # print(os.getenv("API_KEY"))
 
