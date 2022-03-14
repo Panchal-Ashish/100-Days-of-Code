@@ -21,7 +21,7 @@ print(birthdays_dict)
 
 if today in birthdays_dict:
     birthday_person = birthdays_dict[today]["name"]
-    file_path = f"letter_templates/letter_{random.randint(1,3)}.txt"
+    file_path = f"letter_{random.randint(1,3)}.txt"
     with open(file_path) as letter:
         contents = letter.read()
         contents = contents.replace("[NAME]", birthday_person)
@@ -29,8 +29,8 @@ if today in birthdays_dict:
         # print(contents)
 
     with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
-        my_email = "job.ashish28@gmail.com"
-        password = "Ashish_28"
+        my_email = "Your email id"
+        password = "Your pswd"
         to_address = birthdays_dict[today]["email"]
         connection.starttls()
         connection.login(user=my_email, password=password)
