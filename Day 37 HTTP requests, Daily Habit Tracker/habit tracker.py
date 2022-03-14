@@ -1,9 +1,9 @@
 import requests
 import datetime as dt
 
-USERNAME = "ashish28"
-TOKEN = "Ashish_28"
-GRAPH_ID = "graph2"     ## https://pixe.la/v1/users/ashish28/graphs/graph2.html... to check and update daily
+USERNAME = "your username"
+TOKEN = "your token"
+GRAPH_ID = "graph2"     
 HEADER = {"X-USER-TOKEN": TOKEN}
 TODAY = dt.datetime.now()
 
