@@ -10,9 +10,9 @@ NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 STOCK_API_KEY = "PV5T197N5V69GTX9"
 NEWS_API_KEY = "38ab674a9565476db8ca3d58e2f7e159"
 
-account_sid = 'AC2859004428bce7afcad28175bb8e4d98'  # twilio
-auth_token = 'cbcb1221265a2c170eec585158537556' # twilio
-"Ygfm9m4ToQoxnFNpQfC7ptYI7_DrxiJG4mnixd3g"
+account_sid = 'Your Account SID'  # twilio
+auth_token = 'Your Auth Token' # twilio
+
 "If you lose your phone, or don't have access to your verification device, this code is your failsafe to access your account."
 
 UP_DOWN = None
@@ -105,8 +105,8 @@ if abs(difference_percent) >= 0.5:
     #     message = client.messages.create \
     #             (
     #             body=f"{STOCK_NAME} {UP_DOWN} {difference_percent}% \nHeadline: {title} \nBrief: {description} \n{article['url']}",
-    #             from_='+18482891741',
-    #             to='+917506058102'
+    #             from_='Your From No.',
+    #             to='Your To no.'
     #         )
 
 #TODO 9. - Send each article as a separate message via Twilio.
@@ -115,8 +115,8 @@ if abs(difference_percent) >= 0.5:
         message = client.messages.create\
                 (
             body= article,
-            from_='+18482891741',
-            to='+917506058102'
+            from_='Your From No.',
+            to='Your To no.'
         )
 
         # print(message.sid)
