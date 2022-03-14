@@ -7,8 +7,8 @@ COMPANY_NAME = "Tesla Inc"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "PV5T197N5V69GTX9"
-NEWS_API_KEY = "38ab674a9565476db8ca3d58e2f7e159"
+STOCK_API_KEY = "Your API Key"
+NEWS_API_KEY = "Your API Key"
 
 account_sid = 'Your Account SID'  # twilio
 auth_token = 'Your Auth Token' # twilio
