@@ -6,7 +6,7 @@
 ## CLASS = ECONOMY
 ## TRAVEL RANGE = 6 MONTHS
 
-##      https://docs.google.com/spreadsheets/d/1uug3mLM_NfXCs4Qgn4234mfQ7u8lBcYoUidZda8nbWE/edit#gid=1286465009    ##
+##      your link to google sheets whicj=h contains the customer details    ##
 
 #
 #
@@ -19,9 +19,8 @@
 # from notification_manager import NotificationManager
 # from pprint import pprint
 #
-# TEQUILA_API_KEY = "xKeB6Lvcl_e05pTH0_1YDYk40R3U9iJb"
-# SHEETY_ENDPOINT = "https://api.sheety.co/45b16c9a9784d95e5305b68f0f4e7ec5/day39,40CheapFlightAlert/prices"
-#
+# TEQUILA_API_KEY = "TEQUILA_API_KEY"
+# SHEETY_ENDPOINT = "SHEETY_ENDPOINT
 # ORIGIN_CITY_CODE = "BOM"
 #
 # response = requests.get(url= SHEETY_ENDPOINT)
