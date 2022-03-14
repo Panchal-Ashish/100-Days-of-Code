@@ -10,8 +10,8 @@ if weekday == 3:    # mon = 0, tues = 1, wed =2, .....
         data = quotes.readlines()
         quote = random.choice(data)
 
-    my_email = "job.ashish28@gmail.com"
-    password = "Ashish_28"
+    my_email = "Your mail address"
+    password = "Your Password"
 
     with smtplib.SMTP("smtp.gmail.com", port= 587) as connection:
         connection.starttls()
