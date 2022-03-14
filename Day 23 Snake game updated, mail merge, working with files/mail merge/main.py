@@ -12,7 +12,7 @@
 
 PLACEHOLDER = "[name]"
 
-with open("./Input/Names/invited_names.txt") as names_file:     # accessing names from invite list
+with open("invited_names.txt") as names_file:     # accessing names from invite list
     names = names_file.readlines()          # reads all lines from txt file and saves each line in the form of string inside a list
     print(names)
 
@@ -26,7 +26,7 @@ with open("./Input/Names/invited_names.txt") as names_file:     # accessing name
 #     print(letter_contents)
 
 ## Using relative path
-with open("./Input/Letters/starting_letter.txt") as letter_file:
+with open("starting_letter.txt") as letter_file:
     letter_contents = letter_file.read()
     print(letter_contents)
 
@@ -42,7 +42,7 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
 
 
         ## Using relative path
-        with open(f"./Output/ReadyToSend/letter for {stripped_name}",mode="w") as complete_letter:
+        with open(f"letter for {stripped_name}",mode="w") as complete_letter:
             complete_letter.write(new_letter)
 
 
